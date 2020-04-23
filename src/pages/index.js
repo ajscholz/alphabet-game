@@ -1,17 +1,18 @@
 import React from "react"
+import "../components/baseStyles.css"
+import Backdrop from "../components/Backdrop"
+import Container from "../components/Container"
+import GameSuface from "../components/GameSurface"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Backdrop>
+      <Container>
+        <h1>Alphabet Game</h1>
+        <GameSuface />
+      </Container>
+    </Backdrop>
+  )
+}
 
 export default IndexPage

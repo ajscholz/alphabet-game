@@ -5,12 +5,25 @@ module.exports = {
     author: `@ajscholz`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `audio`,
+        path: `${__dirname}/src/audio`,
       },
     },
     `gatsby-transformer-sharp`,
