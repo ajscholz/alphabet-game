@@ -69,7 +69,7 @@ const Game = ({ className }) => {
             <div>Letters Correct: {gameState.correct}</div>
             <div>Letters Incorrect: {gameState.incorrect}</div>
           </Header>
-          <Question currentNumber={gameState.correct}>
+          <Question>
             <CardDeck currentLetter={gameState.currentLetter} check={check} />
           </Question>
         </>

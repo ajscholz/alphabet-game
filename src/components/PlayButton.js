@@ -7,11 +7,13 @@ const PlayButton = styled(animated.button)`
   justify-content: center;
   align-items: center;
   outline: none;
+  max-width: 80%;
   font-size: 2.5em;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1em;
   border-radius: 10000px;
+  line-height: 1.15em;
 
   & svg {
     margin-right: 0.5em;
